@@ -1,0 +1,92 @@
+x <-list(aardvark = 1:5)
+x$a
+x[[a]]
+x[["a"]]
+x[["a",exact=FALSE]]
+x <- c(1,2,NA,4,NA,5)
+bad <- is.na(x)
+x[!bad]
+airquality[1:6, ]
+good <- complete.cases(airquality)
+airquality[good,][1:6]
+airquality[good,][1:6,]
+meta[airquality]
+x <- matrix(1:4,2,2);y<- matrix(rep(10,4),2,2)
+y
+x
+x*y
+x/y
+x <- 4L
+class(x)
+x <- c(4, TRUE)
+class(x)
+x <- c(1,3,5)
+y <- c(3,2,10)
+cbind(x,y)
+x <- list(2,"a","b",TRUE)
+x[[1]]
+class(x[[1]])
+x <- 1:4
+y <- 2
+x
+y
+x+y
+class(x+y)
+class(xL+yL)
+x<- 1L:4L
+class(x)
+x <- c(3,5,1,10,12,6)
+x[x<6] <- 0
+x
+read.csv("hw1_data.csv")
+data <- read.csv("hw1_data.csv")
+con <- file("hw1_data.csv","r")
+read.file("hw1_data.csv")
+pwd
+read.csv("hw1_data.csv")
+print(2,"hw1_data.csv")
+x <- readLines("hw1_data.csv",2)
+x
+nrow("hw1_data.csv")
+x <- nrow("hw1_data.csv")
+x
+nrow(filter("hw1_data.csv",Ozone == "NA"))
+filter <- nrow(filter("hw1_data.csv", Ozone =="NA"))
+x <- nrow(filter("hw1_data.csv",Ozone == "NA"))
+x
+nrow("hw1_data.csv"["hw1_data.csv"$Ozone =="NA",])
+x <- read.csv("hw1_data.csv")
+bad <- is.na(x)
+x[!bad]
+874 / 5
+x[bad]
+nrow(x[bad])
+data <- read.csv["hw1_data.csv"]
+data <- read.csv("hw1_data.csv")
+data[,"Ozone"]
+data[,"Ozone"] <- Ozone
+Ozone <- data[,"Ozone"]
+OzoneClean <- Ozone["NA"==0]
+mean(OzoneClean)
+sum(Ozone)
+miss <- is.na(dataset[, "Ozone"])
+miss <- is.na(Ozone[, "Ozone"])
+miss <- is.na(data[, "Ozone"])
+sum(miss)
+nrow(data)
+mean(data[,"Ozone"],na.rm = TRUE)
+mean(data[,"Temp"],"Month" = 6)
+subset(data, Ozone > 31 & Temp > 90)
+q18 <- subset(data, Ozone > 31 & Temp > 90)
+mean(q18)
+ozonetemp <- subset(data, Ozone > 31 & Temp > 90)
+mean(ozonetemp)
+mean(ozonetemp[,Solar.R],)
+mean(ozonetemp[,"Solar.R"],)
+mean(data[,"Temp"],"Month" == 6)
+data <- read.csv("hw1_data.csv")
+mean(data[,"Temp"],"Month"=6)
+tapply(data$Temp, dataset$Month, mean, na.rm = TRUE)
+tapply(data$Temp, data$Month, mean, na.rm = TRUE)
+q20 <- subset(data, Month = 5)
+q20

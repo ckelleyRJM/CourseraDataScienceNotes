@@ -1,0 +1,92 @@
+search()
+search()
+search()
+test <- function(x,y){}
+test <- function(x,y){}
+test <- function(x,y){}
+test <- function(x,y){}
+clear
+test <- function(x,y){ }
+test <- function(x,y){ x^2 + y/z}
+test(1,2)
+install.packages("swirl")
+ls("swirl")
+library(swirl)
+ls()
+rm(list=ls())
+ls()
+swirl()
+5+7
+x <- 5+7
+x
+y <- x-3
+y
+c(1.1,9,3.14)
+z <- c(1.1,9,3,14)
+z<- c(1.1, 9, 3.14)
+?c
+z
+c(z, 555, z)
+z*2+100
+my_sqrt <- sqrt(z-1)
+my_sqrt
+my_div <- z / my_sqrt
+my_div
+c(1, 2, 3, 4) + c(0, 10)
+c(1,2,3,4)+c(0,10,100)
+z*2+1000
+my_div
+cube <- function(x, n) {#
+        x^3#
+}
+cube(3)
+cube <- function(x, n) {#
+        x^3#
+}
+x <- 1:10#
+if(x > 5) {#
+        x <- 0#
+}
+x <- 1:10#
+if(x > 5) {#
+        x <- 0#
+}
+x <- 1:10#
+if(x > 5) {#
+        x <- 0#
+}
+f <- function(x) {#
+        g <- function(y) {#
+                y + z#
+        }#
+        z <- 4#
+        x + g(x)#
+}
+z <- 10
+f(3)
+z <-4
+f(3)
+z <- 456
+f(3)
+x <- 5#
+y <- if(x < 3) {#
+        NA#
+} else {#
+        10#
+}
+y
+h <- function(x, y = NULL, d = 3L) {#
+        z <- cbind(x, d)#
+        if(!is.null(y))#
+                z <- z + y#
+        else#
+                z <- z + f#
+        g <- x + y / z#
+        if(d == 3L)#
+                return(g)#
+        g <- g + 10#
+        g#
+}
+ls()
+pwd
+pollutantmean <- function(directory, pollutant, id = 1:332){}
