@@ -33,6 +33,12 @@ Find total number of flags with each color.
 
 partition over / group by in SQL is…. in R
 
+## Creating graphics
+
+* For more info about base graphs: http://www.ling.upenn.edu/~joseff/rstudy/week4.html
+* Learn about ggplot2 package, which is apparently really important and ubiquitious among R analyses.
+
+## Other
 
 tapply splits a table based on values of a column in that table. For example,
 
