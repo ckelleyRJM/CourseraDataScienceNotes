@@ -58,6 +58,8 @@ Then, follow the menus and select the R Programming course when given the option
 6. Subsetting Vectors
 7. Matrices and Data Frames
 
+While swirl is active, use `play()` to pause swirl. `nxt()` will reactivate swirl.
+
 ## If you need help...
 
 Visit the [Frequently Asked Questions (FAQ) page](https://github.com/swirldev/swirl/wiki/Coursera-FAQ) to see if you can answer your own question immediately.
