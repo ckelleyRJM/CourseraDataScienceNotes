@@ -1,5 +1,10 @@
 ## SQL <-> R
 
+### Pulling data from database
+
+* Find the appropriate package via Google
+* Tutorial for PostgreSQL: https://code.google.com/archive/p/rpostgresql/
+
 ### Looking at the data
 
 General structure of `table`
