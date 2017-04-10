@@ -4,6 +4,7 @@
 
 * Find the appropriate package via Google
 * Tutorial for PostgreSQL: https://code.google.com/archive/p/rpostgresql/
+* Strava: https://github.com/fawda123/rStrava
 
 ### Looking at the data
 
