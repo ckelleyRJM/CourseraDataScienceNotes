@@ -39,6 +39,40 @@ Find total number of flags with each color.
 
 partition over / group by in SQL is…. in R
 
+## Downloading data
+
+### CSV file from internet
+
+```
+if(!file.exists("./data")){dir.create(".data")} ## Create a directory to store the file if it doesn't exist
+fileUrl <- "<set file url between quotes>"
+download.file(fileUrl, destfile=".data/<file name>.csv", method="curl")
+restData <- read.csv("./data/<file name>.csv")
+```
+
+## Transforming data
+
+* Useful libraries: `plyr`, ...
+
+* Subsetting variables
+```
+restData$nearMe = restData$neighborhood %in% c("Roland Park","Homeland")
+table(restData$nearMe)
+```
+
+* Creating binary variables
+```
+restData$zipWrong = ifelse(restData$zipCode < 0, TRUE, FALSE) ## If zipCode is negative, assign TRUE
+table(restData$zipWrong, restData$zipCode < 0) ## Return matric showing count of T/F 
+```
+
+displays below, b/c there is only 1 zipCode < 0:
+```
+      FALSE TRUE
+FALSE  1326  0
+TRUE     0   1
+```
+
 ## Creating graphics
 
 * For more info about base graphs: http://www.ling.upenn.edu/~joseff/rstudy/week4.html
