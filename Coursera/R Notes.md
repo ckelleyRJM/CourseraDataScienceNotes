@@ -39,6 +39,17 @@ Find total number of flags with each color.
 
 partition over / group by in SQL is…. in R
 
+Combine separate data tables
+
+* R: merge(reviews, solutions, by.x="solution.id", by.y="id", all=TRUE)
+  * `reviews` and `solutions` are the two data tables here
+  * `reviews` is table x; `solutions` is table y
+  * `by.x=..., by.y=...` specifies the JOIN ON
+  * `all=TRUE` makes this an OUTTER JOIN. 
+    * All columns are returned from both data sets, with NA when no match
+* SQL: JOIN
+* There is also join() in R. This is closer to SQL's UNION, where column names must match.
+
 ## Downloading data
 
 ### CSV file from internet
@@ -52,7 +63,21 @@ restData <- read.csv("./data/<file name>.csv")
 
 ## Transforming data
 
-* Useful libraries: `plyr`, ...
+* Useful libraries: `plyr`, `dplyr` ...
+* `dplyr` (specifically for dataframes)
+  * select: return a subset of co lumns of a data frame
+  * arrange: reorder rows of dataframe
+  * mutate: add new variables/columns or transform existing variables
+  * filter: extract subset of rows from data frame based on logical conditions
+  * summarize: 
+```
+Example, showing how to group a data frame (chicago) by year, and summarize key data points
+chicago <- mutata(chicago, year = as.POSIXlt(date)$year + 1900)
+years <- group_by(chicago, year)
+summarize <- years, pm25 = mean(pm25, na.rm = TRUE, o3 = max(o3tmean2), n2 = median(no2tmean2))
+```
+
+
 
 * Subsetting variables
 ```
