@@ -64,7 +64,7 @@ restData <- read.csv("./data/<file name>.csv")
 ## Transforming data
 
 * Useful libraries: `plyr`, `dplyr` ...
-* `dplyr` (specifically for dataframes)
+* `dplyr` (works with data frames, data tables, databases, multidimensional arrays)
   * select: return a subset of co lumns of a data frame
   * arrange: reorder rows of dataframe
   * mutate: add new variables/columns or transform existing variables
